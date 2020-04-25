@@ -6,10 +6,16 @@ public class ClientClass
 {
 	public static void main(String[] args)
 	{
-		Factoty factory=new Factoty();
-		Fruit fr=factory.CreateFruit("A");
-		//Fruit fr=factory.CreateFruit("B");
+//		Factoty factory=new Factory();
+//		Fruit fr=factory.CreateFruit("A");
+//		//Fruit fr=factory.CreateFruit("B");
+//		fr.eat();
+		
+		Factory factory=new AFactory();
+		Fruit fr=factory.CreateFruit();
 		fr.eat();
+		
+		
 
 	}
 	public String factory(String fruitname){
